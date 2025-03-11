@@ -243,7 +243,7 @@ public_users.delete("/auth/review/:isbn/:reviewIndex", (req, res) => {
   });
 });
 
-// Add a book review1
+// Add a book review
 public_users.put("/auth/review/:isbn", (req, res) => {
   const { isbn } = req.params;
   const { review } = req.body;
