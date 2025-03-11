@@ -234,7 +234,7 @@ public_users.delete("/auth/review/:isbn/:reviewIndex", (req, res) => {
     return res.status(400).json({ message: "Invalid review index" });
   }
 
-  // Remove the review from the reviews array
+  // Remove the review from the reviews array1
   book.reviews.splice(index, 1);  // This will remove one element at the specified index
 
   return res.status(200).json({
